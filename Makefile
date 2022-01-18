@@ -6,10 +6,10 @@ INC_DIR = .
 LIBS = -lpthread
 
 # These files compile via implicit rules
-main: ${SRC_DIR}/main.cpp
+ex1: ${SRC_DIR}/ex1.cpp
 	$(CC) $(CFLAGS) $(DEBUG) $(CPPFLAGS) -I$(INC_DIR) $< -o $@ $(LIBS)
 
-.PHONY: main clean
+.PHONY: ex1 clean
 
 clean:
-	rm -f main
+	rm -f ex1
